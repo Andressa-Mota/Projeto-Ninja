@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon.png"/>
+    <title>Seleção Shinobi</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section class="shinobi">
+            <img class="ninja" id="ninja" src="img/ninja.png" alt="ninja">
+            <audio id="dattebayo" src="audio/dattebayo.m4a" preload="auto"></audio>
+            <figcaption class="titulo">NARUTO</figcaption>
+        </section>
+
+        <section class="box estatisticas">
+            <div class="estatistica">
+                <p class="estatistica-titulo">Taijutsu</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="taijutsu">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Ninjutsu</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="ninjutsu">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Genjutsu</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="genjutsu">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Chakra</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="chakra">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="melhorias">
+            <form action="" class="melhorar">
+                <div class="box melhorar-conteudo">
+                    <div class="poder">
+                        <label for="" class="poder-titulo">Força</label>
+                        <div class="controle">
+                            <buttom data-controle="-" data-melhorias ="forca" data-controle="-" class="controle-ajuste">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom  class="controle-ajuste" data-melhorias ="forca" data-controle="+">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="poder">
+                        <label for="" class="poder-titulo">Resistência</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-melhorias ="resistencia" data-controle="-">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-melhorias ="resistencia" data-controle="+">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="poder">
+                        <label for="" class="poder-titulo">Energia</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-melhorias ="energia" data-controle="-">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-melhorias ="energia" data-controle="+">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="poder">
+                        <label for="" class="poder-titulo">Velocidade</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-melhorias ="velocidade" data-controle="-">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-melhorias ="velocidade" data-controle="+">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="poder">
+                        <label for="" class="poder-titulo">Habilidade</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-melhorias ="habilidade" data-controle="-">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-melhorias ="habilidade" data-controle="+">+</buttom>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="ADICIONAR UPGRADES" class="upgrade" id="upgrade">
+            </form>
+        </section>
+    </main>
+</body>
+<script src="./javaScript/main.js"></script>
+</html>
