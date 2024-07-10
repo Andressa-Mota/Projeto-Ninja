@@ -251,6 +251,8 @@ main {
     .estatistica-valor {
         margin: 0;
         order: 1;
+        display: flex;
+        justify-content: center;
     }
     .estatistica:nth-child(2n) .estatistica-valor {
       
@@ -313,9 +315,11 @@ main {
     .estatistica-valor::after {
         content: "";
         display: block;
-        padding-bottom: 100%;
+        padding-bottom: 0;
+        height: 3em;
+        width: 3em;;
         border: 1px solid var(--main-cinza);
         border-radius: 50%;
-        margin-top: 25%;
+        margin-top: 5%;
     }
 }
