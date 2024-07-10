@@ -222,13 +222,13 @@ main {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 400px) {
     .titulo {
         transform: rotate(180deg);
         font-weight: 500;
         font-size: 100px;
         position: absolute;
-        bottom: 33rem;
+        bottom: 10rem;
         left: 0rem;
         line-height: 0.8;
         writing-mode: vertical-rl;
@@ -236,15 +236,28 @@ main {
         color: rgba(255,255,255,0.8)
     }
     .ninja {
-        height: 50%;
+        height: 40%;
         z-index: 1;
         position: absolute;
-        left: -6%;
-        top: 25%;
+        left: -2%;
+        top: 70%;
     }
-    .estatisticas {
+    .estatistica {
+        display: block;
         flex-basis: 43%;
-        padding: 2em 2em 0;
+        padding:  0;
+        margin: -10px;
+    }
+    .estatistica-valor {
+        margin: 0;
+        order: 1;
+    }
+    .estatistica:nth-child(2n) .estatistica-valor {
+      
+        margin: 0;
+    }
+    .estatistica-titulo {
+        margin: 0;
     }
  
     body { 
@@ -252,8 +265,57 @@ main {
     }
 
     main {
-        width: 96vw;
-        height: 80vh;
-        margin: 10vh auto;
+        width: 100vw;
+        height:90vh;
+        margin: 0;
+    }
+    .upgrade {
+        margin-top: 1em;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        padding: 0.2em 1em;
+        float: right;
+        border: 3px solid var(--main-branco);
+        background: var(--main-branco);
+        clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+        cursor: pointer;
+        
+    }
+    .estatistica-numero {
+        transform: translateY(-30%);
+        width: 100%;
+        line-height: 100%;
+        text-align: center;
+        font-size: 3em;
+        margin: 0;
+    }
+ 
+    .box {
+        margin-top:2rem;
+        background: rgba(0,0,0,0.6);
+        clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
+        border-left: 5px solid var(--main-cinza);
+        height: 80%;
+    }
+    
+    .poder-titulo {
+        font-size: 2em;
+    }
+    .poder {
+        padding: 0;
+    }
+    .controle-contador {
+        width: 25px;
+        height: 35px;
+        font-size: 2em;
+     
+    }
+    .estatistica-valor::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+        border: 1px solid var(--main-cinza);
+        border-radius: 50%;
+        margin-top: 25%;
     }
 }
