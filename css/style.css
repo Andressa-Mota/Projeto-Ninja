@@ -222,7 +222,7 @@ main {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .titulo {
         transform: rotate(180deg);
         font-weight: 500;
